@@ -1,6 +1,9 @@
 body {
     background-image: linear-gradient(to right, blue, purple);
 }
+h1 {
+    color: white;
+}
 
 #first-currency {
     color: white;

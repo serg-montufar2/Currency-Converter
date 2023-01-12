@@ -9,19 +9,29 @@
 </head>
 <body>
     <h1>Welcome to Currency Exchanger! (name subject to change)</h1>
+    
     <div id="first-currency">
         <h4 class="directions">Type in a Currency</h4>
+        <label for="list-of-currencies">Select Currency: </label>
+        <select name="currencies" id="currencies"></select>
         <form class="currency-finder">
-            <input type="text" placeholder="input currency" />
-            <input type="submit" value="Submit" />
+            <input type="number" placeholder="input # of amount" />
+            <input class="num-input" type="submit" value="Submit" />
         </form>
+        <dt>Amount:</dt>
+        <dd class="amount"></dd>
     </div>
+
     <div id="second-currency">
         <h4 class="directions">Type in a Second Currency</h4>
+        <label for="list-of-currencies">Select Currency: </label>
+        <select name="currencies" id="currencies"></select>
         <form class="currency-finder">
-            <input type="text" placeholder="input currency"/>
-            <input type="submit" value="Submit"/>
+            <input type="number" placeholder="input # of amount" />
+            <input class="num-input" type="submit" value="Submit" />
         </form>
+        <dt>Amount:</dt>
+        <dd class="amount"></dd>
     </div>
     
 </body>

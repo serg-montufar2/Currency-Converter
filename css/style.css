@@ -1,21 +1,22 @@
 html {
     background: linear-gradient(45deg, rgb(49, 49, 237), rgb(227, 59, 59));
-    height: 100%;
+    min-height: 100%;
 }
 
 h1 {
     color: white;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
 }
 
 #first-currency, #second-currency {
-    display: inline-block;
     color: white;
     border: 3px dashed red;
     min-height: 60px;
     max-width: 250px;
     position: relative;
     text-align: center;
+    align-items: center;
 }
 
 #first-currency {
@@ -27,10 +28,22 @@ h1 {
 
 }
 
+.currencies {
+    width: 70px;
+}
+
+#num-input, #num-output {
+    width: 150px;
+    height: 25px;
+}
+
+/* @media screen and (max-width: 480px) {
+    #first-currency, #second-currency {
+        width: 1000px;
+    }
+} */
+
 .directions{
     position: relative;
     top: 13px;
-}
-.num-input {
-    width: 50px;
 }

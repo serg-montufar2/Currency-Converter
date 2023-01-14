@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/app.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,21 +13,20 @@
     <div id="first-currency">
         <label for="list-of-currencies">Select Currency: </label>
         <select name="currencies" class="currencies"></select>
-        <form class="currency-finder">
-            <input type="number" placeholder="input # of amount" />
-            <input class="num-input" type="submit" value="Submit" />
+        <form class="currency-input">
+            <input id="num-input" type="number" placeholder="input # of amount" />
+            <input type="submit" value="Submit" />
         </form>
     </div>
 
     <div id="second-currency">
         <label for="list-of-currencies">Select Currency: </label>
         <select name="currencies" class="currencies"></select>
-        <form class="currency-finder">
-            <input type="number" placeholder="input # of amount" />
-            <input class="num-input" type="submit" value="Submit" />
+        <form class="currency-output">
+            <input id="num-output" type="text" placeholder="0" readonly="true" />
         </form>
     </div>
     
 </body>
-
+<script src="./js/app.js"></script>
 </html>

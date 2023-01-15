@@ -3,6 +3,7 @@ html {
     min-height: 100%;
 }
 
+
 h1 {
     color: white;
     font-family:'Times New Roman', Times, serif;
@@ -12,24 +13,31 @@ h1 {
 #first-currency, #second-currency {
     color: white;
     border: 3px dashed red;
-    min-height: 60px;
-    max-width: 250px;
-    position: relative;
-    text-align: center;
-    align-items: center;
+    min-height: 100px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#first-currency {
+/* #first-currency {
     left: 50px;
 }
 
 #second-currency {
     left: 50px;
 
-}
+} */
 
 .currencies {
-    width: 70px;
+    width: 5em;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 14em;
 }
 
 #num-input, #num-output {

@@ -13,17 +13,22 @@
     <div id="first-currency">
         <label for="list-of-currencies">Select Currency: </label>
         <select name="currencies" class="currencies"></select>
+        <label for="input">Put in Amount: </label>
         <form class="currency-input">
-            <input id="num-input" type="number" placeholder="input # of amount" />
-            <input type="submit" value="Submit" />
+            <input value=1 id="num-input" type="number" placeholder="input # of amount" />
         </form>
+    </div>
+
+    <div>
+        <input id="button" type="submit" value="Submit" />
     </div>
 
     <div id="second-currency">
         <label for="list-of-currencies">Select Currency: </label>
         <select name="currencies" class="currencies"></select>
+        <label for="output">Amount Converted: </label>
         <form class="currency-output">
-            <input id="num-output" type="text" placeholder="0" readonly="true" />
+            <input id="num-output" type="text" placeholder="1" readonly="true" />
         </form>
     </div>
     

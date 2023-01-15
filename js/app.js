@@ -10,7 +10,7 @@ window.onload = (event) => {
             // console.log(json, "this was successful");
 //This turns the keys of the exchange rates into an array
             const keys = Object.keys(json.rates);
-//This adds each of the keys or currency codes into the dropdown menus one by one
+            //This adds each of the keys or currency codes into the dropdown menus one by one
             for (let i = 0; i < select.length; i++) {
                 for (let j = 0; j < keys.length; j++) {
                     const currencies = document.createElement("option");
@@ -23,7 +23,7 @@ window.onload = (event) => {
         },
         (err) => {
             console.log(err, "this was an error");
-        })
+        });
 }
 
 
@@ -33,9 +33,6 @@ const submit = document.querySelector('input[type="submit"');
         getRates();
     });
 
-
-const inputValue = document.querySelector('input[type="number"]').value;
-
 const getRates = () => {
     const firstValue = select[0].value;
     const secondValue = select[1].value
@@ -43,11 +40,18 @@ const getRates = () => {
             return response.json();
         }).then((json) => {
             console.log(json, "this was successful");
-            let rate = json.rates[secondValue];
-            console.log(rate);
+            const rateToConvert = json.rates[secondValue];
+            exchange(rateToConvert, secondValue);
         },
         (err) => {
             console.log(err, "this was an error");
         })
 }
 
+const exchange = (value, currencyCode) => {
+    const inputValue = document.getElementById("num-input").value;
+    let answer = inputValue * value;
+    
+    const output = document.getElementById("num-output");
+    output.value = answer + " " + currencyCode;
+}

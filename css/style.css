@@ -21,7 +21,6 @@ label[for=input], label[for=output] {
 } 
 
 .wrapper, #calc-button {
-    background: rgb(136, 128, 128);
     border: 1px solid black;
     border-radius: 5px;
     position: absolute;
@@ -30,6 +29,7 @@ label[for=input], label[for=output] {
 }
 
 .wrapper {
+    background: rgb(136, 128, 128);
     min-height: 100px;
     align-items: center;
     display: flex;
@@ -41,27 +41,36 @@ label[for=input], label[for=output] {
 }
 
 #calc-button {
+    background-color: rgb(16, 187, 31);
     width: 100px;
     height: 25px;
     cursor: pointer;
-    bottom: 53px;
-    transform: translateX(-55%);
+    /* left: 3px; */
+    top: 100px;
+    transform: translateX(-60%);
 }
 
 #first-currency, #second-currency {
     margin: 30px; 
-    padding: 10;
+    padding: 10px 20px;
     margin: 0 25px;
 }
 
  #num-input, #num-output {
-    width: 150px;
+    width: 140px;
     height: 25px;
+}
+
+.flag {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    top: 10px;
 }
 
 /* @media screen and (max-width: 480px) {
     #first-currency, #second-currency {
-        width: 1000px;
+        width: 100px;
     }
 } */
 

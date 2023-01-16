@@ -1,0 +1,1 @@
+const countryListForFlags = ["us", "ae", "af", "al"];

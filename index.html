@@ -11,8 +11,9 @@
     <h1>Welcome to FlipMoney!</h1>
     <div class="wrapper"> 
         <div id="first-currency">
-            <label for="list-of-currencies">Select Currency: </label>
+            <label for="list-of-currencies">Select 1st Currency: </label>
             <select name="currencies" class="currencies"></select>
+            <img class="flag" src="https://flagpedia.net/data/flags/w1160/us.webp">
             <label for="input">Type Amount: </label>
             <form class="currency-input">
                 <input value=1 id="num-input" type="number" placeholder="input # of amount" />
@@ -20,8 +21,9 @@
         </div>
         <input id="reverse-button" type="submit" value=Flip />
         <div id="second-currency">
-            <label for="list-of-currencies">Select Currency: </label>
+            <label for="list-of-currencies">Select 2nd Currency: </label>
             <select name="currencies" class="currencies"></select>
+            <img class="flag" src="https://flagpedia.net/data/flags/w1160/us.webp">
             <label for="output">Amount Converted: </label>
             <form class="currency-output">
                 <input id="num-output" type="text" placeholder="1" readonly="true" />
@@ -33,4 +35,5 @@
     
 </body>
 <script src="./js/app.js"></script>
+<script src="./js/list.js"></script>
 </html>

@@ -17,7 +17,7 @@ window.onload = (event) => {
                     currencies.setAttribute("class", "currency-code");
                     currencies.setAttribute("value", keys[j]);
                     currencies.innerText = keys[j];
-                    select[i].append(currencies)
+                    select[i].append(currencies);
                 }
             }
         },
@@ -27,7 +27,7 @@ window.onload = (event) => {
 }
 
 
-const submit = document.querySelector('input[type="submit"');
+const submit = document.querySelector("#calc-button");
     submit.addEventListener("click", (e) => {
         e.preventDefault();
         getRates();
@@ -50,8 +50,8 @@ const getRates = () => {
 
 const exchange = (value, currencyCode) => {
     const inputValue = document.getElementById("num-input").value;
-    let answer = inputValue * value;
-    
+    let answer = (inputValue * value).toFixed(2);
+
     const output = document.getElementById("num-output");
     output.value = answer + " " + currencyCode;
 }

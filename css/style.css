@@ -1,8 +1,13 @@
 html {
     background: linear-gradient(45deg, rgb(49, 49, 237), rgb(227, 59, 59));
-    min-height: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
+body {
+    position: relative;
+    height: 50%;
+}
 
 h1 {
     color: white;
@@ -10,37 +15,49 @@ h1 {
     text-align: center;
 }
 
-#first-currency, #second-currency {
-    color: white;
-    border: 3px dashed red;
+label[for=input], label[for=output] {
+    display: flex;
+    justify-content: flex-start;
+} 
+
+.wrapper, #calc-button {
+    background: rgb(136, 128, 128);
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.wrapper {
     min-height: 100px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* #first-currency {
-    left: 50px;
-}
-
-#second-currency {
-    left: 50px;
-
-} */
-
-.currencies {
-    width: 5em;
-}
-
-#button {
+    
+    align-items: center;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 14em;
+    width: fit-content;
+    height: 150px;
+    /* found this from a css youtube video and works pretty well to center the items */
+    transform: translateX(-50%);
 }
 
-#num-input, #num-output {
+#calc-button {
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    bottom: 53px;
+    transform: translateX(-55%);
+}
+
+#first-currency, #second-currency {
+    margin: 30px; 
+    padding: 10;
+    margin: 0 25px;
+}
+
+
+
+ #num-input, #num-output {
     width: 150px;
     height: 25px;
 }
@@ -51,7 +68,3 @@ h1 {
     }
 } */
 
-.directions{
-    position: relative;
-    top: 13px;
-}

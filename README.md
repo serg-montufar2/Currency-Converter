@@ -15,6 +15,9 @@ My main goal was to have the user be able to exchange between currencies of thei
 # Stretch Goals For This Website
 My original idea was to implement a different tab where a user is able to answer some trivia question to the best of their ability and their scores would be saved on the website for them to see. I was unable to do that due to time constraints, however, I plan to implement it in the near future. My current stretch goal is to implement a "switch" button that will switch the contents of the converting such as: the flag, the dropdown menus, and the values in the boxes. It has been fully completed and I was able to do that without too much difficulty.
 
+# Difficulties
+Throughout the making of this website, I experienced multiple struggles along the way. The main struggle that I had was trying to style the main box with all of the elements inside it. When starting this website, I was pretty weak in CSS and I didn't fully understand how to style the website in the way that I wanted to. Now I have a stronger understanding of CSS and I enjoyed making this website the way that it is currently. Another struggle that I had was trying to make the number the user puts in convert with the currency that the user chooses in the second dropdown menu. It did not take too long to figure out how to implement it, but it took a good chunk of the process in making this website.
+
 
 # Directions
 

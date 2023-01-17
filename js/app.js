@@ -39,11 +39,11 @@ submit.addEventListener("click", (e) => {
     getRates();
 });
 
-const flipButton = document.getElementById("flip-button");
+const switchButton = document.getElementById("switch-button");
 const input = document.getElementById("num-input");
 const output = document.getElementById("num-output");
 
-flipButton.addEventListener("click", (e) => {
+switchButton.addEventListener("click", (e) => {
     e.preventDefault();
     // const input = document
     let tempValueForDropdown = select[0].value;
@@ -73,14 +73,14 @@ const getRates = () => {
     }).then((json) => {
         console.log(json, "this was successful");
         const rateToConvert = json.rates[valueOfSecondDropDown];
-        exchange(rateToConvert, valueOfSecondDropDown);
+        exchange(rateToConvert);
     },
     (err) => {
         console.log(err, "this was an error");
     });
 }
 
-const exchange = (value, currencyCode) => {
+const exchange = (value) => {
     const inputValue = document.getElementById("num-input").value;
     let answer = (inputValue * value).toFixed(2);
     const output = document.getElementById("num-output");

@@ -34,10 +34,29 @@ window.onload = (event) => {
 }
 
 const submit = document.querySelector("#calc-button");
-    submit.addEventListener("click", (e) => {
-        e.preventDefault();
-        getRates();
-    });
+submit.addEventListener("click", (e) => {
+    e.preventDefault();
+    getRates();
+});
+
+const flipButton = document.getElementById("flip-button");
+flipButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    // const input = document
+    let tempValueForDropdown = select[0].value;
+    select[0].value = select[1].value;
+    select[1].value = tempValueForDropdown;
+    flagImage(select[1]);
+    flagImage(select[0]);
+    getRates();
+    // let tempValueForInput = 
+});
+
+const closeButton = document.getElementById("close-button");
+closeButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    closeButton.parentElement.style.display = "none";
+});
 
 const getRates = () => {
     const valueOfFirstDropDown = select[0].value;
@@ -86,16 +105,7 @@ const flagImage = (dropdown) => {
     }
 }
 
-// const flipButton = document.getElementById("flip-button");
-//     flipButton.addEventListener("click", (e) => {
-//         e.preventDefault();
-//         const input = document
-//         let tempValueForDropdown = select[0].value;
-//         select[0].value = select[1].value;
-//         select[1].value = tempValueForDropdown;
-//         flagImage(select[1]);
-//         flagImage(select[0]);
-        
-//         let tempValueForInput = 
-// });
+
+
+
 

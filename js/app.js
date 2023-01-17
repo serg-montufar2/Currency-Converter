@@ -40,6 +40,9 @@ submit.addEventListener("click", (e) => {
 });
 
 const flipButton = document.getElementById("flip-button");
+const input = document.getElementById("num-input");
+const output = document.getElementById("num-output");
+
 flipButton.addEventListener("click", (e) => {
     e.preventDefault();
     // const input = document
@@ -48,8 +51,12 @@ flipButton.addEventListener("click", (e) => {
     select[1].value = tempValueForDropdown;
     flagImage(select[1]);
     flagImage(select[0]);
+
+    let temp = input.value;
+    input.value = output.value;
+    output.value = temp;
     getRates();
-    // let tempValueForInput = 
+
 });
 
 const closeButton = document.getElementById("close-button");
@@ -77,7 +84,8 @@ const exchange = (value, currencyCode) => {
     const inputValue = document.getElementById("num-input").value;
     let answer = (inputValue * value).toFixed(2);
     const output = document.getElementById("num-output");
-    output.value = answer + " " + currencyCode;
+    // output.value = answer + " " + currencyCode;
+    output.value = answer;
 }
 
 const flagImage = (dropdown) => {

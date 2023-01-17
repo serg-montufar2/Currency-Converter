@@ -47,7 +47,7 @@ label[for=input], label[for=output] {
     cursor: pointer;
     /* left: 3px; */
     top: 100px;
-    transform: translateX(-60%);
+    transform: translateX(-50%);
 }
 
 #first-currency, #second-currency {
@@ -65,7 +65,7 @@ label[for=input], label[for=output] {
     width: 50px;
     height: 25px;
     position: relative;
-    top: 10px;
+    top: 6px;
 }
 
 /* @media screen and (max-width: 480px) {

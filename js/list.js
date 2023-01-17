@@ -1,1 +1,1 @@
-const countryListForFlags = ["us", "ae", "af", "al"];
+const countryListForFlags = ["us", "ae", "af", "al", "am", "nl", "ao"];
